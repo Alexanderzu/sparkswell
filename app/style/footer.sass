@@ -1,0 +1,48 @@
+@import _default
+
+.footer
+    background-color: $gray-ligth-4
+    color: $gray
+    margin-top: 100px
+    padding: $step-3 0
+    &__container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        @media only screen and (max-width: 576px)
+            display: block
+            text-align: center
+    &__c,&__menu,&__social
+        @media only screen and (max-width: 576px)
+            margin-bottom: 10px
+    &__menu
+        .menu
+            margin-left: -200px
+            @media only screen and (max-width: 990px)
+                margin-left: auto
+            ul
+                li
+                    display: inline-block
+                    margin: 0 20px
+                    a
+                        color: $gray
+                        text-decoration: none
+                        transition: $transition
+                        &:hover
+                            color: $black
+    &__social
+        ul
+            display: flex
+            align-items: center
+            @media only screen and (max-width: 576px)
+                justify-content: center
+            li
+                display: inline-block
+                margin-left: $step-1
+                a
+                    text-decoration: none
+                    transition: $transition
+                    &:hover
+                        opacity: 0.7
+
+                        

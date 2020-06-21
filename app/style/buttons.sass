@@ -1,0 +1,31 @@
+@import _default
+
+.button
+    font-size: 12px
+    line-height: 18px
+    border-radius: 20px
+    text-decoration: none
+    text-transform: uppercase
+    text-align: center
+    cursor: pointer
+    transition: $transition
+    &--positive
+        background: $red
+        color: $white
+        font-size: 14px
+        line-height: 21px
+        padding: 10px 18px
+        display: block
+        margin-bottom: $step-1
+        &:hover
+            box-shadow: 0px 0px 10px $red-dark
+    &--border
+        color: $main
+        border: 1px solid $main
+        padding: 6px 22px
+        display: inline-block
+        &:hover
+            color: $white
+            background: $main
+
+

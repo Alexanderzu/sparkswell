@@ -1,0 +1,212 @@
+@import _reset
+@import _default
+@import header
+@import footer
+@import buttons
+@import progress-bar
+@import tab
+@import tags
+
+
+/* style default pages */
+body
+	background-color: $gray-ligth-5
+	font-family: 'Poppins', sans-serif
+	font-weight: 400
+	font-size: 14px
+	line-height: 24px
+	color: $gray
+
+p
+	font-size: 14px
+	line-height: 20px
+
+.container
+	margin: 0 auto
+	max-width: 1200px
+	padding: 0 20px
+
+.row, [class*=col-]
+	box-sizing: border-box
+
+.col-4,.col-8
+	width: 100%
+	padding-left: 20px
+	padding-right: 20px
+	@media only screen and (max-width: 990px)
+		max-width: 100%
+		flex: 100%
+	
+.col-8
+	flex: 0 0 66.666667%
+	max-width: 66.666667%
+	
+
+.col-4
+	flex: 0 0 33.333333%
+	max-width: 33.333333%
+
+
+.row
+	display: flex
+	flex-wrap: wrap
+	margin-left: -20px
+	margin-right: -20px
+
+h1, h2, h3, h4, h5, h6
+	font-weight: 600
+	color: $black
+	font-weight: 700
+	margin-bottom: $step-1
+
+h1
+	font-size: 36px
+	line-height: 48px
+	margin-bottom: 32px !important
+	@media only screen and (max-width: 576px)
+		@extend .h2
+		margin-bottom: 18px
+
+h2
+	font-size: 28px
+	line-height: 36px
+	margin-bottom: $step-min / 2
+
+h3
+	font-size: 18px
+	line-height: 24px
+
+h4
+	margin-bottom: $step-min / 2
+	letter-spacing: 0.5px
+	text-transform: uppercase
+	font-weight: 400
+
+.h1
+	@extend h1
+
+.h2
+	@extend h2
+
+.h3
+	@extend h3
+
+.h4
+	@extend h4
+
+b
+	font-weight: 700
+	color: $black
+
+.color--black
+	color: $black !important
+
+.mb0
+	margin-bottom: 0 !important
+
+.mb4
+	margin-bottom: 4px !important
+
+.mb10
+	margin-bottom: 10px !important
+
+.df
+	display: flex
+
+.aic
+	align-items: center
+
+.jcsb
+	justify-content: space-between
+
+.caption
+	font-size: 12px
+	line-height: 20px
+	img
+		margin-right: 4px
+
+.revers
+	@media only screen and (max-width: 990px)
+		flex-flow: column-reverse
+
+/* END style default pages */
+
+/* style pages */
+
+.link-view
+	color: $red-dark
+	text-decoration: none
+	transition: $transition
+	&:hover
+		color: $black
+
+.explore
+	&__img
+		width: 100%
+		height: 303px
+		overflow: hidden
+		margin-bottom: $step-3 + $step-min
+		@media only screen and (max-width: 576px)
+			height: auto
+			margin-bottom: $step-1
+		@media only screen and (max-width: 990px)
+			width: initial
+			margin-left: -20px
+			margin-right: -20px
+		img
+			object-fit: cover
+			width: 100%
+
+.informer
+	display: flex
+	justify-content: space-between
+	margin-bottom: $step-3
+	&__block
+		width: 50%
+		&:first-child()
+			padding-right: 40px
+		&:last-child()
+			text-align: right
+
+.cash
+	&__buttons
+		.button
+			width: 100%
+			&:first-child
+				margin-right: 10px
+			&:last-child
+				margin-left: 10px
+
+.data-informers
+	margin-top: 62px
+	margin-bottom: 10px
+	&__header
+		display: flex
+		justify-content: space-between
+		div
+			&:firs-child
+				margin-right: 10px
+	.data-informer
+		background-color: $main-ligth-3
+		border-radius: 20px
+		padding: 18px 20px
+		display: flex
+		align-items: center
+		justify-content: start
+		&__title
+			font-size: 14px
+		&__data
+			text-align: center
+			width: 80px
+			margin-right: 10px
+			&_week
+				text-transform: uppercase
+				letter-spacing: 0.5px
+				font-size: 10px
+				line-height: 12px
+			&_number
+				font-size: 28px
+				line-height: 32px
+				color: $main
+				font-weight: bold
+/* END style pages */

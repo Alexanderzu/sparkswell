@@ -1,0 +1,22 @@
+@import _default
+
+.progress
+    margin-bottom: $step-2
+    progress
+        border: 0
+        width: 100%
+        height: 7px
+        display: block
+        border-radius: 20px
+        overflow: hidden
+        margin-bottom: 10px
+        &::-moz-progress-bar, &::-webkit-progress-bar, &::-webkit-progress-value
+            border: 0
+            border-radius: 20px
+        &::-moz-progress-bar
+            background: $green
+        &::-webkit-progress-bar
+            background: #F0F0F0
+        &::-webkit-progress-value
+            background: $green
+

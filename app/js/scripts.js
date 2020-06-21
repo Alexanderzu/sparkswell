@@ -1,0 +1,2 @@
+//= tab.js
+//= menu.js

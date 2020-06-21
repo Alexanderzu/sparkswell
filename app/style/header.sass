@@ -1,0 +1,63 @@
+@import _default
+@import menu
+
+.header
+    background-color: $white
+    padding: 50px 0
+    margin-bottom: 64px
+    border-bottom: 1px solid $gray-ligth-1
+    @media only screen and (max-width: 576px)
+        padding: 6px 0
+        margin-bottom: $step-1
+    &__container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        @media only screen and (max-width: 576px)
+            flex-flow: row-reverse
+    &__logo
+        @media only screen and (max-width: 576px)
+            width: 48px
+            margin-right: 40%
+            img
+                width: 100%
+    &__menu
+        display: flex
+        align-items: center
+        .menu
+            font-weight: 600
+            color: $black
+            @media only screen and (max-width: 576px)
+                margin-right: auto
+            ul
+                li
+                    display: inline-block
+                    @media only screen and (max-width: 576px)
+                        display: block
+                        margin-bottom: $step-min
+                    a
+                        color: $black
+                        text-decoration: none
+                        padding: 4px 20px
+                        border-radius: 20px
+                        margin: 0 10px
+                        transition: $transition
+                        &.active,&:hover
+                            background: $red
+                            color: $white
+    &__user
+        margin-left: 20px
+        @media only screen and (max-width: 576px)
+            margin-left: inherit
+            margin-right: auto
+            margin-bottom: $step-1
+        &_face
+            width: 40px
+            height: 40px
+            overflow: hidden
+            border-radius: 100%
+            img
+                object-fit: cover
+                width: 100%
+                        
+                    
